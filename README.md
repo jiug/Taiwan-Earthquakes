@@ -4,6 +4,8 @@
 
 - Hypothesis Testing, could the drift be due to chance?
 - Separate the two earthquake populations in different datasets
+- Organize thought flow
+
 
 ## Findings
 
