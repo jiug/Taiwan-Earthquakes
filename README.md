@@ -2,11 +2,14 @@
 
 ## To do 
 
-- Hypothesis Testing, could the drift be due to chance?
-- Separate the two earthquake populations in different datasets
-- Organize thought flow
+- [x] Hypothesis Testing, could the drift be due to chance?
+- [ ] Separate the two earthquake populations in different datasets
+- [ ] Organize thought flow
+- [ ] Train a model that is able to discern between the two earthquake populations
+
 
 
 ## Findings
 
--There are two distinct distributions of earthquakes. 
+- There are two distinct distributions of earthquakes. 
+- The drift is statistically significant
