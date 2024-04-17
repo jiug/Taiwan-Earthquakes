@@ -60,8 +60,20 @@ This section is intended to justify the choices made when creating new features.
 
 ### 3.1 Annual seismic center
 
-This feature was created as a way of aggregating all the data from the same year into a single observation. Because of the disparity in sample size between small and big area earthquakes, I decided to use a weighted average. The weight is the exponential of the each earthquakes magnitude.
+This feature was created as a way of aggregating all the data from the same year into a single observation. The reason behind this that the magnitude is a logarithmic variable, a simple average would over-represent the small magnitude earthquakes. The weight is the exponential of the each earthquakes magnitude.
 
 Let's give a simple example of this method in one spatial dimension. For this example we are going to have two earthquakes of $M_1= 4$ and $M_2 = 6$ occurring at locations $x_1 = 1$ and $x_2 = 2$. For simplicity the exponential constant is set to 2, this doesn't change the validity of the point made in this section.
 
 ![Explanation of the weighted average](./images/weighted_average.png)
+
+The downscaling powers of the logarithm aren't tamed just by adding the magnitude as weights ("Magnitude-weighted Average"). Using the exponential of the magnitude only earthquakes that are comparable in energy release would "compete" with each other.
+
+### 3.2 Cumulative Energy Release
+
+This feature was created for visualization purposes. It gives an idea of the energy release per earthquake and how they add to the total amount of energy released in the period from 2013 to 2023.
+
+![Normalized cumulative energy release graph](./images/cumulative_energy.png)
+
+A way of interpreting this graph is by comparing the slope at different times. With a glance one can see that the 2018-2020 window was significantly less seismically active than the more recent 2022-2024 period.
+
+## 4. Seismic center drift
